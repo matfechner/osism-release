@@ -1,0 +1,19 @@
+---
+# project: {{ project_name }}
+#   build: {{ build }}
+
+{{ project_name }}_revision: {{ revisions[project_name] }}
+
+{{ project_name }}_version: "{{ project_version }}"
+{% for image in project_images %}
+{%- if image == "placement_api" %}
+{{ image }}_image: "{{ docker_namespace }}/nova-{{ image|replace('_', '-') }}"
+{{ image }}_tag: "{{ '{{' }} {{ project_name }}_version {{ '}}' }}-{{ '{{' }} {{ project_name }}_revision {{ '}}' }}"
+{%- elif image == "openvswitch_db" %}
+{{ image }}_image: "{{ docker_namespace }}/{{ image|replace('_', '-') }}-server"
+{{ image }}_tag: "{{ '{{' }} {{ project_name }}_version {{ '}}' }}-{{ '{{' }} {{ project_name }}_revision {{ '}}' }}"
+{%- else %}
+{{ image }}_image: "{{ docker_namespace }}/{{ image|replace('_', '-') }}"
+{{ image }}_tag: "{{ '{{' }} {{ project_name }}_version {{ '}}' }}-{{ '{{' }} {{ project_name }}_revision {{ '}}' }}"
+{%- endif %}
+{% endfor %}
