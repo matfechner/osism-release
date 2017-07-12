@@ -1,0 +1,30 @@
+---
+# project: tempest
+#   build: 
+
+tempest_revision: 5
+
+tempest_version: "16.0.0"
+
+tempest_image: "betacloud/tempest"
+tempest_tag: "{{ tempest_version }}-{{ tempest_revision }}"
+---
+# project: tempest
+#   build: 20170712
+
+tempest_revision: 5
+
+tempest_version: "16.0.0"
+
+tempest_image: "betacloud/tempest"
+tempest_tag: "{{ tempest_version }}-{{ tempest_revision }}"
+---
+# project: tempest
+#   build: 20170712
+
+tempest_revision: 5
+
+tempest_version: "16.0.0"
+
+tempest_image: "betacloud/tempest"
+tempest_tag: "{{ tempest_version }}-{{ tempest_revision }}"

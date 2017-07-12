@@ -1,0 +1,30 @@
+---
+# project: keepalived
+#   build: 
+
+keepalived_revision: 5
+
+keepalived_version: "4.0.2"
+
+keepalived_image: "betacloud/keepalived"
+keepalived_tag: "{{ keepalived_version }}-{{ keepalived_revision }}"
+---
+# project: keepalived
+#   build: 20170712
+
+keepalived_revision: 5
+
+keepalived_version: "4.0.2"
+
+keepalived_image: "betacloud/keepalived"
+keepalived_tag: "{{ keepalived_version }}-{{ keepalived_revision }}"
+---
+# project: keepalived
+#   build: 20170712
+
+keepalived_revision: 5
+
+keepalived_version: "4.0.2"
+
+keepalived_image: "betacloud/keepalived"
+keepalived_tag: "{{ keepalived_version }}-{{ keepalived_revision }}"

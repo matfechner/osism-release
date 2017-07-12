@@ -1,0 +1,30 @@
+---
+# project: fluentd
+#   build: 
+
+fluentd_revision: 5
+
+fluentd_version: "2.3"
+
+fluentd_image: "betacloud/fluentd"
+fluentd_tag: "{{ fluentd_version }}-{{ fluentd_revision }}"
+---
+# project: fluentd
+#   build: 20170712
+
+fluentd_revision: 5
+
+fluentd_version: "2.3"
+
+fluentd_image: "betacloud/fluentd"
+fluentd_tag: "{{ fluentd_version }}-{{ fluentd_revision }}"
+---
+# project: fluentd
+#   build: 20170712
+
+fluentd_revision: 5
+
+fluentd_version: "2.3"
+
+fluentd_image: "betacloud/fluentd"
+fluentd_tag: "{{ fluentd_version }}-{{ fluentd_revision }}"

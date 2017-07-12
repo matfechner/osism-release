@@ -1,0 +1,39 @@
+---
+# project: glance
+#   build: 
+
+glance_revision: 5
+
+glance_version: "14.0.0"
+
+glance_registry_image: "betacloud/glance-registry"
+glance_registry_tag: "{{ glance_version }}-{{ glance_revision }}"
+
+glance_api_image: "betacloud/glance-api"
+glance_api_tag: "{{ glance_version }}-{{ glance_revision }}"
+---
+# project: glance
+#   build: 20170712
+
+glance_revision: 5
+
+glance_version: "14.0.0"
+
+glance_registry_image: "betacloud/glance-registry"
+glance_registry_tag: "{{ glance_version }}-{{ glance_revision }}"
+
+glance_api_image: "betacloud/glance-api"
+glance_api_tag: "{{ glance_version }}-{{ glance_revision }}"
+---
+# project: glance
+#   build: 20170712
+
+glance_revision: 5
+
+glance_version: "14.0.0"
+
+glance_registry_image: "betacloud/glance-registry"
+glance_registry_tag: "{{ glance_version }}-{{ glance_revision }}"
+
+glance_api_image: "betacloud/glance-api"
+glance_api_tag: "{{ glance_version }}-{{ glance_revision }}"

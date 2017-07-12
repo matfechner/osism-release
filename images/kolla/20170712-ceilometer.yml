@@ -1,0 +1,66 @@
+---
+# project: ceilometer
+#   build: 
+
+ceilometer_revision: 5
+
+ceilometer_version: "8.0.1"
+
+ceilometer_notification_image: "betacloud/ceilometer-notification"
+ceilometer_notification_tag: "{{ ceilometer_version }}-{{ ceilometer_revision }}"
+
+ceilometer_api_image: "betacloud/ceilometer-api"
+ceilometer_api_tag: "{{ ceilometer_version }}-{{ ceilometer_revision }}"
+
+ceilometer_central_image: "betacloud/ceilometer-central"
+ceilometer_central_tag: "{{ ceilometer_version }}-{{ ceilometer_revision }}"
+
+ceilometer_collector_image: "betacloud/ceilometer-collector"
+ceilometer_collector_tag: "{{ ceilometer_version }}-{{ ceilometer_revision }}"
+
+ceilometer_compute_image: "betacloud/ceilometer-compute"
+ceilometer_compute_tag: "{{ ceilometer_version }}-{{ ceilometer_revision }}"
+---
+# project: ceilometer
+#   build: 20170712
+
+ceilometer_revision: 5
+
+ceilometer_version: "8.0.1"
+
+ceilometer_notification_image: "betacloud/ceilometer-notification"
+ceilometer_notification_tag: "{{ ceilometer_version }}-{{ ceilometer_revision }}"
+
+ceilometer_api_image: "betacloud/ceilometer-api"
+ceilometer_api_tag: "{{ ceilometer_version }}-{{ ceilometer_revision }}"
+
+ceilometer_central_image: "betacloud/ceilometer-central"
+ceilometer_central_tag: "{{ ceilometer_version }}-{{ ceilometer_revision }}"
+
+ceilometer_collector_image: "betacloud/ceilometer-collector"
+ceilometer_collector_tag: "{{ ceilometer_version }}-{{ ceilometer_revision }}"
+
+ceilometer_compute_image: "betacloud/ceilometer-compute"
+ceilometer_compute_tag: "{{ ceilometer_version }}-{{ ceilometer_revision }}"
+---
+# project: ceilometer
+#   build: 20170712
+
+ceilometer_revision: 5
+
+ceilometer_version: "8.0.1"
+
+ceilometer_notification_image: "betacloud/ceilometer-notification"
+ceilometer_notification_tag: "{{ ceilometer_version }}-{{ ceilometer_revision }}"
+
+ceilometer_api_image: "betacloud/ceilometer-api"
+ceilometer_api_tag: "{{ ceilometer_version }}-{{ ceilometer_revision }}"
+
+ceilometer_central_image: "betacloud/ceilometer-central"
+ceilometer_central_tag: "{{ ceilometer_version }}-{{ ceilometer_revision }}"
+
+ceilometer_collector_image: "betacloud/ceilometer-collector"
+ceilometer_collector_tag: "{{ ceilometer_version }}-{{ ceilometer_revision }}"
+
+ceilometer_compute_image: "betacloud/ceilometer-compute"
+ceilometer_compute_tag: "{{ ceilometer_version }}-{{ ceilometer_revision }}"

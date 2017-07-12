@@ -1,0 +1,30 @@
+---
+# project: kibana
+#   build: 
+
+kibana_revision: 5
+
+kibana_version: "5.4"
+
+kibana_image: "betacloud/kibana"
+kibana_tag: "{{ kibana_version }}-{{ kibana_revision }}"
+---
+# project: kibana
+#   build: 20170712
+
+kibana_revision: 5
+
+kibana_version: "5.4"
+
+kibana_image: "betacloud/kibana"
+kibana_tag: "{{ kibana_version }}-{{ kibana_revision }}"
+---
+# project: kibana
+#   build: 20170712
+
+kibana_revision: 5
+
+kibana_version: "5.4"
+
+kibana_image: "betacloud/kibana"
+kibana_tag: "{{ kibana_version }}-{{ kibana_revision }}"

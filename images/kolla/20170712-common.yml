@@ -1,0 +1,48 @@
+---
+# project: common
+#   build: 
+
+common_revision: 5
+
+common_version: "4.0.2"
+
+kolla_toolbox_image: "betacloud/kolla-toolbox"
+kolla_toolbox_tag: "{{ common_version }}-{{ common_revision }}"
+
+cron_image: "betacloud/cron"
+cron_tag: "{{ common_version }}-{{ common_revision }}"
+
+kubetoolbox_image: "betacloud/kubetoolbox"
+kubetoolbox_tag: "{{ common_version }}-{{ common_revision }}"
+---
+# project: common
+#   build: 20170712
+
+common_revision: 5
+
+common_version: "4.0.2"
+
+kolla_toolbox_image: "betacloud/kolla-toolbox"
+kolla_toolbox_tag: "{{ common_version }}-{{ common_revision }}"
+
+cron_image: "betacloud/cron"
+cron_tag: "{{ common_version }}-{{ common_revision }}"
+
+kubetoolbox_image: "betacloud/kubetoolbox"
+kubetoolbox_tag: "{{ common_version }}-{{ common_revision }}"
+---
+# project: common
+#   build: 20170712
+
+common_revision: 5
+
+common_version: "4.0.2"
+
+kolla_toolbox_image: "betacloud/kolla-toolbox"
+kolla_toolbox_tag: "{{ common_version }}-{{ common_revision }}"
+
+cron_image: "betacloud/cron"
+cron_tag: "{{ common_version }}-{{ common_revision }}"
+
+kubetoolbox_image: "betacloud/kubetoolbox"
+kubetoolbox_tag: "{{ common_version }}-{{ common_revision }}"

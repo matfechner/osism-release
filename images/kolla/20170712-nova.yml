@@ -1,0 +1,129 @@
+---
+# project: nova
+#   build: 
+
+nova_revision: 5
+
+nova_version: "15.0.6"
+
+nova_libvirt_image: "betacloud/nova-libvirt"
+nova_libvirt_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_ssh_image: "betacloud/nova-ssh"
+nova_ssh_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_conductor_image: "betacloud/nova-conductor"
+nova_conductor_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_consoleauth_image: "betacloud/nova-consoleauth"
+nova_consoleauth_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_novncproxy_image: "betacloud/nova-novncproxy"
+nova_novncproxy_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_spicehtml5proxy_image: "betacloud/nova-spicehtml5proxy"
+nova_spicehtml5proxy_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_scheduler_image: "betacloud/nova-scheduler"
+nova_scheduler_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_compute_image: "betacloud/nova-compute"
+nova_compute_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_api_image: "betacloud/nova-api"
+nova_api_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_compute_ironic_image: "betacloud/nova-compute-ironic"
+nova_compute_ironic_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_serialproxy_image: "betacloud/nova-serialproxy"
+nova_serialproxy_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+placement_api_image: "betacloud/nova-placement-api"
+placement_api_tag: "{{ nova_version }}-{{ nova_revision }}"
+---
+# project: nova
+#   build: 20170712
+
+nova_revision: 5
+
+nova_version: "15.0.6"
+
+nova_libvirt_image: "betacloud/nova-libvirt"
+nova_libvirt_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_ssh_image: "betacloud/nova-ssh"
+nova_ssh_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_conductor_image: "betacloud/nova-conductor"
+nova_conductor_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_consoleauth_image: "betacloud/nova-consoleauth"
+nova_consoleauth_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_novncproxy_image: "betacloud/nova-novncproxy"
+nova_novncproxy_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_spicehtml5proxy_image: "betacloud/nova-spicehtml5proxy"
+nova_spicehtml5proxy_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_scheduler_image: "betacloud/nova-scheduler"
+nova_scheduler_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_compute_image: "betacloud/nova-compute"
+nova_compute_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_api_image: "betacloud/nova-api"
+nova_api_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_compute_ironic_image: "betacloud/nova-compute-ironic"
+nova_compute_ironic_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_serialproxy_image: "betacloud/nova-serialproxy"
+nova_serialproxy_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+placement_api_image: "betacloud/nova-placement-api"
+placement_api_tag: "{{ nova_version }}-{{ nova_revision }}"
+---
+# project: nova
+#   build: 20170712
+
+nova_revision: 5
+
+nova_version: "15.0.6"
+
+nova_libvirt_image: "betacloud/nova-libvirt"
+nova_libvirt_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_ssh_image: "betacloud/nova-ssh"
+nova_ssh_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_conductor_image: "betacloud/nova-conductor"
+nova_conductor_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_consoleauth_image: "betacloud/nova-consoleauth"
+nova_consoleauth_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_novncproxy_image: "betacloud/nova-novncproxy"
+nova_novncproxy_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_spicehtml5proxy_image: "betacloud/nova-spicehtml5proxy"
+nova_spicehtml5proxy_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_scheduler_image: "betacloud/nova-scheduler"
+nova_scheduler_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_compute_image: "betacloud/nova-compute"
+nova_compute_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_api_image: "betacloud/nova-api"
+nova_api_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_compute_ironic_image: "betacloud/nova-compute-ironic"
+nova_compute_ironic_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+nova_serialproxy_image: "betacloud/nova-serialproxy"
+nova_serialproxy_tag: "{{ nova_version }}-{{ nova_revision }}"
+
+placement_api_image: "betacloud/nova-placement-api"
+placement_api_tag: "{{ nova_version }}-{{ nova_revision }}"

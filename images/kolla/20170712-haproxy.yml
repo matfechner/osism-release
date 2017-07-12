@@ -1,0 +1,30 @@
+---
+# project: haproxy
+#   build: 
+
+haproxy_revision: 5
+
+haproxy_version: "1.7"
+
+haproxy_image: "betacloud/haproxy"
+haproxy_tag: "{{ haproxy_version }}-{{ haproxy_revision }}"
+---
+# project: haproxy
+#   build: 20170712
+
+haproxy_revision: 5
+
+haproxy_version: "1.7"
+
+haproxy_image: "betacloud/haproxy"
+haproxy_tag: "{{ haproxy_version }}-{{ haproxy_revision }}"
+---
+# project: haproxy
+#   build: 20170712
+
+haproxy_revision: 5
+
+haproxy_version: "1.7"
+
+haproxy_image: "betacloud/haproxy"
+haproxy_tag: "{{ haproxy_version }}-{{ haproxy_revision }}"

@@ -1,0 +1,39 @@
+---
+# project: murano
+#   build: 
+
+murano_revision: 5
+
+murano_version: "3.2.0"
+
+murano_engine_image: "betacloud/murano-engine"
+murano_engine_tag: "{{ murano_version }}-{{ murano_revision }}"
+
+murano_api_image: "betacloud/murano-api"
+murano_api_tag: "{{ murano_version }}-{{ murano_revision }}"
+---
+# project: murano
+#   build: 20170712
+
+murano_revision: 5
+
+murano_version: "3.2.0"
+
+murano_engine_image: "betacloud/murano-engine"
+murano_engine_tag: "{{ murano_version }}-{{ murano_revision }}"
+
+murano_api_image: "betacloud/murano-api"
+murano_api_tag: "{{ murano_version }}-{{ murano_revision }}"
+---
+# project: murano
+#   build: 20170712
+
+murano_revision: 5
+
+murano_version: "3.2.0"
+
+murano_engine_image: "betacloud/murano-engine"
+murano_engine_tag: "{{ murano_version }}-{{ murano_revision }}"
+
+murano_api_image: "betacloud/murano-api"
+murano_api_tag: "{{ murano_version }}-{{ murano_revision }}"

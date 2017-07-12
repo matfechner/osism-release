@@ -1,0 +1,102 @@
+---
+# project: neutron
+#   build: 
+
+neutron_revision: 5
+
+neutron_version: "10.0.2"
+
+neutron_dhcp_agent_image: "betacloud/neutron-dhcp-agent"
+neutron_dhcp_agent_tag: "{{ neutron_version }}-{{ neutron_revision }}"
+
+neutron_l3_agent_image: "betacloud/neutron-l3-agent"
+neutron_l3_agent_tag: "{{ neutron_version }}-{{ neutron_revision }}"
+
+neutron_lbaas_agent_image: "betacloud/neutron-lbaas-agent"
+neutron_lbaas_agent_tag: "{{ neutron_version }}-{{ neutron_revision }}"
+
+neutron_linuxbridge_agent_image: "betacloud/neutron-linuxbridge-agent"
+neutron_linuxbridge_agent_tag: "{{ neutron_version }}-{{ neutron_revision }}"
+
+neutron_metadata_agent_image: "betacloud/neutron-metadata-agent"
+neutron_metadata_agent_tag: "{{ neutron_version }}-{{ neutron_revision }}"
+
+neutron_openvswitch_agent_image: "betacloud/neutron-openvswitch-agent"
+neutron_openvswitch_agent_tag: "{{ neutron_version }}-{{ neutron_revision }}"
+
+neutron_sfc_agent_image: "betacloud/neutron-sfc-agent"
+neutron_sfc_agent_tag: "{{ neutron_version }}-{{ neutron_revision }}"
+
+neutron_server_image: "betacloud/neutron-server"
+neutron_server_tag: "{{ neutron_version }}-{{ neutron_revision }}"
+
+neutron_vpnaas_agent_image: "betacloud/neutron-vpnaas-agent"
+neutron_vpnaas_agent_tag: "{{ neutron_version }}-{{ neutron_revision }}"
+---
+# project: neutron
+#   build: 20170712
+
+neutron_revision: 5
+
+neutron_version: "10.0.2"
+
+neutron_dhcp_agent_image: "betacloud/neutron-dhcp-agent"
+neutron_dhcp_agent_tag: "{{ neutron_version }}-{{ neutron_revision }}"
+
+neutron_l3_agent_image: "betacloud/neutron-l3-agent"
+neutron_l3_agent_tag: "{{ neutron_version }}-{{ neutron_revision }}"
+
+neutron_lbaas_agent_image: "betacloud/neutron-lbaas-agent"
+neutron_lbaas_agent_tag: "{{ neutron_version }}-{{ neutron_revision }}"
+
+neutron_linuxbridge_agent_image: "betacloud/neutron-linuxbridge-agent"
+neutron_linuxbridge_agent_tag: "{{ neutron_version }}-{{ neutron_revision }}"
+
+neutron_metadata_agent_image: "betacloud/neutron-metadata-agent"
+neutron_metadata_agent_tag: "{{ neutron_version }}-{{ neutron_revision }}"
+
+neutron_openvswitch_agent_image: "betacloud/neutron-openvswitch-agent"
+neutron_openvswitch_agent_tag: "{{ neutron_version }}-{{ neutron_revision }}"
+
+neutron_sfc_agent_image: "betacloud/neutron-sfc-agent"
+neutron_sfc_agent_tag: "{{ neutron_version }}-{{ neutron_revision }}"
+
+neutron_server_image: "betacloud/neutron-server"
+neutron_server_tag: "{{ neutron_version }}-{{ neutron_revision }}"
+
+neutron_vpnaas_agent_image: "betacloud/neutron-vpnaas-agent"
+neutron_vpnaas_agent_tag: "{{ neutron_version }}-{{ neutron_revision }}"
+---
+# project: neutron
+#   build: 20170712
+
+neutron_revision: 5
+
+neutron_version: "10.0.2"
+
+neutron_dhcp_agent_image: "betacloud/neutron-dhcp-agent"
+neutron_dhcp_agent_tag: "{{ neutron_version }}-{{ neutron_revision }}"
+
+neutron_l3_agent_image: "betacloud/neutron-l3-agent"
+neutron_l3_agent_tag: "{{ neutron_version }}-{{ neutron_revision }}"
+
+neutron_lbaas_agent_image: "betacloud/neutron-lbaas-agent"
+neutron_lbaas_agent_tag: "{{ neutron_version }}-{{ neutron_revision }}"
+
+neutron_linuxbridge_agent_image: "betacloud/neutron-linuxbridge-agent"
+neutron_linuxbridge_agent_tag: "{{ neutron_version }}-{{ neutron_revision }}"
+
+neutron_metadata_agent_image: "betacloud/neutron-metadata-agent"
+neutron_metadata_agent_tag: "{{ neutron_version }}-{{ neutron_revision }}"
+
+neutron_openvswitch_agent_image: "betacloud/neutron-openvswitch-agent"
+neutron_openvswitch_agent_tag: "{{ neutron_version }}-{{ neutron_revision }}"
+
+neutron_sfc_agent_image: "betacloud/neutron-sfc-agent"
+neutron_sfc_agent_tag: "{{ neutron_version }}-{{ neutron_revision }}"
+
+neutron_server_image: "betacloud/neutron-server"
+neutron_server_tag: "{{ neutron_version }}-{{ neutron_revision }}"
+
+neutron_vpnaas_agent_image: "betacloud/neutron-vpnaas-agent"
+neutron_vpnaas_agent_tag: "{{ neutron_version }}-{{ neutron_revision }}"

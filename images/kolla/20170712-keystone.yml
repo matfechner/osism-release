@@ -1,0 +1,48 @@
+---
+# project: keystone
+#   build: 
+
+keystone_revision: 5
+
+keystone_version: "11.0.2"
+
+keystone_image: "betacloud/keystone"
+keystone_tag: "{{ keystone_version }}-{{ keystone_revision }}"
+
+keystone_fernet_image: "betacloud/keystone-fernet"
+keystone_fernet_tag: "{{ keystone_version }}-{{ keystone_revision }}"
+
+keystone_ssh_image: "betacloud/keystone-ssh"
+keystone_ssh_tag: "{{ keystone_version }}-{{ keystone_revision }}"
+---
+# project: keystone
+#   build: 20170712
+
+keystone_revision: 5
+
+keystone_version: "11.0.2"
+
+keystone_image: "betacloud/keystone"
+keystone_tag: "{{ keystone_version }}-{{ keystone_revision }}"
+
+keystone_fernet_image: "betacloud/keystone-fernet"
+keystone_fernet_tag: "{{ keystone_version }}-{{ keystone_revision }}"
+
+keystone_ssh_image: "betacloud/keystone-ssh"
+keystone_ssh_tag: "{{ keystone_version }}-{{ keystone_revision }}"
+---
+# project: keystone
+#   build: 20170712
+
+keystone_revision: 5
+
+keystone_version: "11.0.2"
+
+keystone_image: "betacloud/keystone"
+keystone_tag: "{{ keystone_version }}-{{ keystone_revision }}"
+
+keystone_fernet_image: "betacloud/keystone-fernet"
+keystone_fernet_tag: "{{ keystone_version }}-{{ keystone_revision }}"
+
+keystone_ssh_image: "betacloud/keystone-ssh"
+keystone_ssh_tag: "{{ keystone_version }}-{{ keystone_revision }}"

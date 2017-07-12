@@ -1,0 +1,30 @@
+---
+# project: openvswitch_db
+#   build: 
+
+openvswitch_db_revision: 5
+
+openvswitch_db_version: "4.0.2"
+
+openvswitch_db_image: "betacloud/openvswitch-db-server"
+openvswitch_db_tag: "{{ openvswitch_db_version }}-{{ openvswitch_db_revision }}"
+---
+# project: openvswitch_db
+#   build: 20170712
+
+openvswitch_db_revision: 5
+
+openvswitch_db_version: "4.0.2"
+
+openvswitch_db_image: "betacloud/openvswitch-db-server"
+openvswitch_db_tag: "{{ openvswitch_db_version }}-{{ openvswitch_db_revision }}"
+---
+# project: openvswitch_db
+#   build: 20170712
+
+openvswitch_db_revision: 5
+
+openvswitch_db_version: "4.0.2"
+
+openvswitch_db_image: "betacloud/openvswitch-db-server"
+openvswitch_db_tag: "{{ openvswitch_db_version }}-{{ openvswitch_db_revision }}"

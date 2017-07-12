@@ -1,0 +1,30 @@
+---
+# project: chrony
+#   build: 
+
+chrony_revision: 5
+
+chrony_version: "4.0.2"
+
+chrony_image: "betacloud/chrony"
+chrony_tag: "{{ chrony_version }}-{{ chrony_revision }}"
+---
+# project: chrony
+#   build: 20170712
+
+chrony_revision: 5
+
+chrony_version: "4.0.2"
+
+chrony_image: "betacloud/chrony"
+chrony_tag: "{{ chrony_version }}-{{ chrony_revision }}"
+---
+# project: chrony
+#   build: 20170712
+
+chrony_revision: 5
+
+chrony_version: "4.0.2"
+
+chrony_image: "betacloud/chrony"
+chrony_tag: "{{ chrony_version }}-{{ chrony_revision }}"

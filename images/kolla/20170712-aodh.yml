@@ -1,0 +1,57 @@
+---
+# project: aodh
+#   build: 
+
+aodh_revision: 5
+
+aodh_version: "4.0.0"
+
+aodh_api_image: "betacloud/aodh-api"
+aodh_api_tag: "{{ aodh_version }}-{{ aodh_revision }}"
+
+aodh_evaluator_image: "betacloud/aodh-evaluator"
+aodh_evaluator_tag: "{{ aodh_version }}-{{ aodh_revision }}"
+
+aodh_listener_image: "betacloud/aodh-listener"
+aodh_listener_tag: "{{ aodh_version }}-{{ aodh_revision }}"
+
+aodh_notifier_image: "betacloud/aodh-notifier"
+aodh_notifier_tag: "{{ aodh_version }}-{{ aodh_revision }}"
+---
+# project: aodh
+#   build: 20170712
+
+aodh_revision: 5
+
+aodh_version: "4.0.0"
+
+aodh_api_image: "betacloud/aodh-api"
+aodh_api_tag: "{{ aodh_version }}-{{ aodh_revision }}"
+
+aodh_evaluator_image: "betacloud/aodh-evaluator"
+aodh_evaluator_tag: "{{ aodh_version }}-{{ aodh_revision }}"
+
+aodh_listener_image: "betacloud/aodh-listener"
+aodh_listener_tag: "{{ aodh_version }}-{{ aodh_revision }}"
+
+aodh_notifier_image: "betacloud/aodh-notifier"
+aodh_notifier_tag: "{{ aodh_version }}-{{ aodh_revision }}"
+---
+# project: aodh
+#   build: 20170712
+
+aodh_revision: 5
+
+aodh_version: "4.0.0"
+
+aodh_api_image: "betacloud/aodh-api"
+aodh_api_tag: "{{ aodh_version }}-{{ aodh_revision }}"
+
+aodh_evaluator_image: "betacloud/aodh-evaluator"
+aodh_evaluator_tag: "{{ aodh_version }}-{{ aodh_revision }}"
+
+aodh_listener_image: "betacloud/aodh-listener"
+aodh_listener_tag: "{{ aodh_version }}-{{ aodh_revision }}"
+
+aodh_notifier_image: "betacloud/aodh-notifier"
+aodh_notifier_tag: "{{ aodh_version }}-{{ aodh_revision }}"

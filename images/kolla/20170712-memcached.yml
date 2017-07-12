@@ -1,0 +1,30 @@
+---
+# project: memcached
+#   build: 
+
+memcached_revision: 5
+
+memcached_version: "4.0.2"
+
+memcached_image: "betacloud/memcached"
+memcached_tag: "{{ memcached_version }}-{{ memcached_revision }}"
+---
+# project: memcached
+#   build: 20170712
+
+memcached_revision: 5
+
+memcached_version: "4.0.2"
+
+memcached_image: "betacloud/memcached"
+memcached_tag: "{{ memcached_version }}-{{ memcached_revision }}"
+---
+# project: memcached
+#   build: 20170712
+
+memcached_revision: 5
+
+memcached_version: "4.0.2"
+
+memcached_image: "betacloud/memcached"
+memcached_tag: "{{ memcached_version }}-{{ memcached_revision }}"
