@@ -14,10 +14,10 @@ today = datetime.date.today()
 BUILD = os.environ.get("BUILD", today.strftime("%Y%m%d"))
 
 DOCKER_REGISTRY = os.environ.get('DOCKER_REGISTRY', 'hub.docker.com')
-DOCKER_NAMESPACE = os.environ.get('DOCKER_NAMESPACE', 'betacloud')
+DOCKER_NAMESPACE = os.environ.get('DOCKER_NAMESPACE', 'osism')
 
 TEMPLATE_PROJECT = "project.tmpl"
-DESTINATION = "images/kolla"
+DESTINATION = "images"
 
 
 def get_tags_of_image(image):
@@ -30,7 +30,7 @@ def get_tags_of_image(image):
 
 
 def get_last_revision_of_project(project, tag):
-    with open("tmp-%s.lst" % project, 'r') as fp:
+    with open("tmp/tmp-%s.lst" % project, 'r') as fp:
         image = fp.readline().strip().replace("_", "-")
 
     if project == "openvswitch_db":
@@ -62,19 +62,22 @@ template_project = environment.get_template(TEMPLATE_PROJECT)
 
 projects = []
 revisions = {}
-for lstfile in glob.iglob("tmp-*.lst"):
-    project_name = (lstfile[:-4])[4:]
+for lstfile in glob.iglob("tmp/tmp-*.lst"):
+    project_name = (lstfile[:-4])[8:]
     if project_name in all_projects:
         revisions[project_name] = get_last_revision_of_project(project_name, all_projects[project_name])
         projects.append(project_name)
 
 all_projects = collections.OrderedDict(sorted(all_projects.items()))
 
-for lstfile in glob.iglob("tmp-*.lst"):
+with open(os.path.join(DESTINATION, "kolla-%s.yml" % BUILD), "a+") as fp:
+    fp.write("---\n")
+
+for lstfile in glob.iglob("tmp/tmp-*.lst"):
     with open(lstfile) as fp:
         images = fp.read().splitlines()
 
-    project_name = (lstfile[:-4])[4:]
+    project_name = (lstfile[:-4])[8:]
     if project_name in all_projects:
         result = template_project.render({
             "docker_namespace": DOCKER_NAMESPACE,
@@ -85,5 +88,5 @@ for lstfile in glob.iglob("tmp-*.lst"):
             "build": BUILD
         })
 
-        with open(os.path.join(DESTINATION, "%s-%s.yml" % (BUILD, project_name)), "a+") as fp:
+        with open(os.path.join(DESTINATION, "kolla-%s.yml" % BUILD), "a+") as fp:
             fp.write(result)

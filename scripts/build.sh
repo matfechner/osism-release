@@ -3,21 +3,27 @@ set -x
 
 build=$(date +%Y%m%d)
 
-src/prepare-lst-files.sh
-src/generate-yml-files.py
+##########################
+# kolla
 
-rm *.lst
-rm -rf kolla-ansible-repository
+src/kolla-prepare.sh
+src/kolla-generate.py
 
-pushd images/kolla
+sed -e 's/\(.*_revision: \).*/\1 latest/g' images/kolla-$build.yml > images/kolla-latest.yml
 
-for f in $(ls -1 $build-*.yml); do
-    git rm -f current-${f#$build-}
-    ln -s $f current-${f#$build-}
-    git add current-${f#$build-}
-    git add $f
-done
-popd
+git rm -f images/kolla-current.yml
+ln -s kolla-$build.yml images/kolla-current.yml
+git add images/kolla-current.yml
+git add images/kolla-latest.yml
+git add images/kolla-$build.yml
 
-git commit -a -m "Add versions for $build"
+rm -rf tmp
+
+##########################
+# ceph
+
+##########################
+# git
+
+git commit -a -m "Add version files for $build"
 git push
