@@ -70,7 +70,7 @@ for lstfile in glob.iglob("tmp/tmp-*.lst"):
 
 all_projects = collections.OrderedDict(sorted(all_projects.items()))
 
-with open(os.path.join(DESTINATION, "kolla-%s.yml" % BUILD), "a+") as fp:
+with open(os.path.join(DESTINATION, "kolla-%s.yml" % BUILD), "w") as fp:
     fp.write("---\n")
 
 for lstfile in glob.iglob("tmp/tmp-*.lst"):
