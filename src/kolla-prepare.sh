@@ -1,6 +1,6 @@
 #!/bin/sh
 
-IGNOREFILE=src/files/ignore.lst
+IGNOREFILE=src/files/kolla-ignore.lst
 VERSION_KOLLA_ANSIBLE=4.0.2
 
 mkdir -p tmp

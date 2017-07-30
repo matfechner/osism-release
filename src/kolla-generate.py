@@ -16,7 +16,7 @@ BUILD = os.environ.get("BUILD", today.strftime("%Y%m%d"))
 DOCKER_REGISTRY = os.environ.get('DOCKER_REGISTRY', 'hub.docker.com')
 DOCKER_NAMESPACE = os.environ.get('DOCKER_NAMESPACE', 'osism')
 
-TEMPLATE_PROJECT = "project.tmpl"
+TEMPLATE_PROJECT = "kolla.tmpl"
 DESTINATION = "images"
 
 

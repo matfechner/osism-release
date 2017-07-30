@@ -1,6 +1,7 @@
 ---
-openstack_release_name: ocata
+ceph_version: kraken
 kolla_version: 4.0.2
+openstack_version: ocata
 
 betacloud_projects:
   ara: 0.13.3
