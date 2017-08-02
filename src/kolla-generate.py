@@ -14,7 +14,6 @@ import yaml
 today = datetime.date.today()
 OSISM_VERSION = os.environ.get("OSISM_VERSION", today.strftime("%Y%m%d"))
 
-DOCKER_REGISTRY = os.environ.get('DOCKER_REGISTRY', 'hub.docker.com')
 DOCKER_NAMESPACE = os.environ.get('DOCKER_NAMESPACE', 'osism')
 
 TEMPLATE_PROJECT = "kolla.tmpl"

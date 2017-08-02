@@ -9,10 +9,9 @@ build=$(date +%Y%m%d)
 src/kolla-prepare.sh
 src/kolla-generate.py
 
-sed -e 's/\(.*_revision: \).*/\1 latest/g' images/kolla-$build.yml > images/kolla-latest.yml
+sed -e 's/-{{ osism_version }}//' images/kolla-$build.yml > images/kolla-current.yml
+sed -e 's/\(.*_tag:\).*/\1 latest/' -e '/.*_version:.*/d' images/kolla-$build.yml > images/kolla-latest.yml
 
-git rm -f images/kolla-current.yml
-ln -s kolla-$build.yml images/kolla-current.yml
 git add images/kolla-current.yml
 git add images/kolla-latest.yml
 git add images/kolla-$build.yml
@@ -24,12 +23,9 @@ rm -rf tmp
 
 src/ceph-generate.py
 
-sed -e 's/\(.*_revision: \).*/\1 latest/g' images/ceph-$build.yml > images/ceph-latest.yml
-
 git rm -f images/ceph-current.yml
 ln -s ceph-$build.yml images/ceph-current.yml
 git add images/ceph-current.yml
-git add images/ceph-latest.yml
 git add images/ceph-$build.yml
 
 ##########################

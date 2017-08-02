@@ -40,7 +40,7 @@ def get_last_revision_of_image(image, tag):
     return last_revision
 
 
-with open("versions/current.yml", "rb") as fp:
+with open("versions/latest.yml", "rb") as fp:
     versions = yaml.load(fp)
 
 loader = jinja2.FileSystemLoader("src/templates")

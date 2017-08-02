@@ -7,16 +7,16 @@ osism_version: 20170802
 aodh_version: "4.0"
 
 aodh_api_image: "osism/aodh-api"
-aodh_api_tag: "{{ aodh_version }}"
+aodh_api_tag: "{{ aodh_version }}-{{ osism_version }}"
 
 aodh_evaluator_image: "osism/aodh-evaluator"
-aodh_evaluator_tag: "{{ aodh_version }}"
+aodh_evaluator_tag: "{{ aodh_version }}-{{ osism_version }}"
 
 aodh_listener_image: "osism/aodh-listener"
-aodh_listener_tag: "{{ aodh_version }}"
+aodh_listener_tag: "{{ aodh_version }}-{{ osism_version }}"
 
 aodh_notifier_image: "osism/aodh-notifier"
-aodh_notifier_tag: "{{ aodh_version }}"
+aodh_notifier_tag: "{{ aodh_version }}-{{ osism_version }}"
 
 ##########################
 # project: ceilometer
@@ -24,19 +24,19 @@ aodh_notifier_tag: "{{ aodh_version }}"
 ceilometer_version: "8.1"
 
 ceilometer_notification_image: "osism/ceilometer-notification"
-ceilometer_notification_tag: "{{ ceilometer_version }}"
+ceilometer_notification_tag: "{{ ceilometer_version }}-{{ osism_version }}"
 
 ceilometer_api_image: "osism/ceilometer-api"
-ceilometer_api_tag: "{{ ceilometer_version }}"
+ceilometer_api_tag: "{{ ceilometer_version }}-{{ osism_version }}"
 
 ceilometer_central_image: "osism/ceilometer-central"
-ceilometer_central_tag: "{{ ceilometer_version }}"
+ceilometer_central_tag: "{{ ceilometer_version }}-{{ osism_version }}"
 
 ceilometer_collector_image: "osism/ceilometer-collector"
-ceilometer_collector_tag: "{{ ceilometer_version }}"
+ceilometer_collector_tag: "{{ ceilometer_version }}-{{ osism_version }}"
 
 ceilometer_compute_image: "osism/ceilometer-compute"
-ceilometer_compute_tag: "{{ ceilometer_version }}"
+ceilometer_compute_tag: "{{ ceilometer_version }}-{{ osism_version }}"
 
 ##########################
 # project: chrony
@@ -44,7 +44,7 @@ ceilometer_compute_tag: "{{ ceilometer_version }}"
 chrony_version: "4.0"
 
 chrony_image: "osism/chrony"
-chrony_tag: "{{ chrony_version }}"
+chrony_tag: "{{ chrony_version }}-{{ osism_version }}"
 
 ##########################
 # project: cinder
@@ -52,16 +52,16 @@ chrony_tag: "{{ chrony_version }}"
 cinder_version: "10.0"
 
 cinder_volume_image: "osism/cinder-volume"
-cinder_volume_tag: "{{ cinder_version }}"
+cinder_volume_tag: "{{ cinder_version }}-{{ osism_version }}"
 
 cinder_scheduler_image: "osism/cinder-scheduler"
-cinder_scheduler_tag: "{{ cinder_version }}"
+cinder_scheduler_tag: "{{ cinder_version }}-{{ osism_version }}"
 
 cinder_backup_image: "osism/cinder-backup"
-cinder_backup_tag: "{{ cinder_version }}"
+cinder_backup_tag: "{{ cinder_version }}-{{ osism_version }}"
 
 cinder_api_image: "osism/cinder-api"
-cinder_api_tag: "{{ cinder_version }}"
+cinder_api_tag: "{{ cinder_version }}-{{ osism_version }}"
 
 ##########################
 # project: common
@@ -69,13 +69,13 @@ cinder_api_tag: "{{ cinder_version }}"
 common_version: "4.0"
 
 kolla_toolbox_image: "osism/kolla-toolbox"
-kolla_toolbox_tag: "{{ common_version }}"
+kolla_toolbox_tag: "{{ common_version }}-{{ osism_version }}"
 
 cron_image: "osism/cron"
-cron_tag: "{{ common_version }}"
+cron_tag: "{{ common_version }}-{{ osism_version }}"
 
 kubetoolbox_image: "osism/kubetoolbox"
-kubetoolbox_tag: "{{ common_version }}"
+kubetoolbox_tag: "{{ common_version }}-{{ osism_version }}"
 
 ##########################
 # project: elasticsearch
@@ -83,7 +83,7 @@ kubetoolbox_tag: "{{ common_version }}"
 elasticsearch_version: "5.4"
 
 elasticsearch_image: "osism/elasticsearch"
-elasticsearch_tag: "{{ elasticsearch_version }}"
+elasticsearch_tag: "{{ elasticsearch_version }}-{{ osism_version }}"
 
 ##########################
 # project: fluentd
@@ -91,7 +91,7 @@ elasticsearch_tag: "{{ elasticsearch_version }}"
 fluentd_version: "2.3"
 
 fluentd_image: "osism/fluentd"
-fluentd_tag: "{{ fluentd_version }}"
+fluentd_tag: "{{ fluentd_version }}-{{ osism_version }}"
 
 ##########################
 # project: glance
@@ -99,10 +99,10 @@ fluentd_tag: "{{ fluentd_version }}"
 glance_version: "14.0"
 
 glance_registry_image: "osism/glance-registry"
-glance_registry_tag: "{{ glance_version }}"
+glance_registry_tag: "{{ glance_version }}-{{ osism_version }}"
 
 glance_api_image: "osism/glance-api"
-glance_api_tag: "{{ glance_version }}"
+glance_api_tag: "{{ glance_version }}-{{ osism_version }}"
 
 ##########################
 # project: gnocchi
@@ -110,13 +110,13 @@ glance_api_tag: "{{ glance_version }}"
 gnocchi_version: "3.1"
 
 gnocchi_api_image: "osism/gnocchi-api"
-gnocchi_api_tag: "{{ gnocchi_version }}"
+gnocchi_api_tag: "{{ gnocchi_version }}-{{ osism_version }}"
 
 gnocchi_statsd_image: "osism/gnocchi-statsd"
-gnocchi_statsd_tag: "{{ gnocchi_version }}"
+gnocchi_statsd_tag: "{{ gnocchi_version }}-{{ osism_version }}"
 
 gnocchi_metricd_image: "osism/gnocchi-metricd"
-gnocchi_metricd_tag: "{{ gnocchi_version }}"
+gnocchi_metricd_tag: "{{ gnocchi_version }}-{{ osism_version }}"
 
 ##########################
 # project: haproxy
@@ -124,7 +124,7 @@ gnocchi_metricd_tag: "{{ gnocchi_version }}"
 haproxy_version: "1.7"
 
 haproxy_image: "osism/haproxy"
-haproxy_tag: "{{ haproxy_version }}"
+haproxy_tag: "{{ haproxy_version }}-{{ osism_version }}"
 
 ##########################
 # project: heat
@@ -132,13 +132,13 @@ haproxy_tag: "{{ haproxy_version }}"
 heat_version: "8.0"
 
 heat_api_image: "osism/heat-api"
-heat_api_tag: "{{ heat_version }}"
+heat_api_tag: "{{ heat_version }}-{{ osism_version }}"
 
 heat_api_cfn_image: "osism/heat-api-cfn"
-heat_api_cfn_tag: "{{ heat_version }}"
+heat_api_cfn_tag: "{{ heat_version }}-{{ osism_version }}"
 
 heat_engine_image: "osism/heat-engine"
-heat_engine_tag: "{{ heat_version }}"
+heat_engine_tag: "{{ heat_version }}-{{ osism_version }}"
 
 ##########################
 # project: horizon
@@ -146,7 +146,7 @@ heat_engine_tag: "{{ heat_version }}"
 horizon_version: "11.0"
 
 horizon_image: "osism/horizon"
-horizon_tag: "{{ horizon_version }}"
+horizon_tag: "{{ horizon_version }}-{{ osism_version }}"
 
 ##########################
 # project: keepalived
@@ -154,7 +154,7 @@ horizon_tag: "{{ horizon_version }}"
 keepalived_version: "4.0"
 
 keepalived_image: "osism/keepalived"
-keepalived_tag: "{{ keepalived_version }}"
+keepalived_tag: "{{ keepalived_version }}-{{ osism_version }}"
 
 ##########################
 # project: keystone
@@ -162,13 +162,13 @@ keepalived_tag: "{{ keepalived_version }}"
 keystone_version: "11.0"
 
 keystone_image: "osism/keystone"
-keystone_tag: "{{ keystone_version }}"
+keystone_tag: "{{ keystone_version }}-{{ osism_version }}"
 
 keystone_fernet_image: "osism/keystone-fernet"
-keystone_fernet_tag: "{{ keystone_version }}"
+keystone_fernet_tag: "{{ keystone_version }}-{{ osism_version }}"
 
 keystone_ssh_image: "osism/keystone-ssh"
-keystone_ssh_tag: "{{ keystone_version }}"
+keystone_ssh_tag: "{{ keystone_version }}-{{ osism_version }}"
 
 ##########################
 # project: kibana
@@ -176,7 +176,7 @@ keystone_ssh_tag: "{{ keystone_version }}"
 kibana_version: "5.4"
 
 kibana_image: "osism/kibana"
-kibana_tag: "{{ kibana_version }}"
+kibana_tag: "{{ kibana_version }}-{{ osism_version }}"
 
 ##########################
 # project: manila
@@ -184,16 +184,16 @@ kibana_tag: "{{ kibana_version }}"
 manila_version: "4.0"
 
 manila_share_image: "osism/manila-share"
-manila_share_tag: "{{ manila_version }}"
+manila_share_tag: "{{ manila_version }}-{{ osism_version }}"
 
 manila_scheduler_image: "osism/manila-scheduler"
-manila_scheduler_tag: "{{ manila_version }}"
+manila_scheduler_tag: "{{ manila_version }}-{{ osism_version }}"
 
 manila_api_image: "osism/manila-api"
-manila_api_tag: "{{ manila_version }}"
+manila_api_tag: "{{ manila_version }}-{{ osism_version }}"
 
 manila_data_image: "osism/manila-data"
-manila_data_tag: "{{ manila_version }}"
+manila_data_tag: "{{ manila_version }}-{{ osism_version }}"
 
 ##########################
 # project: mariadb
@@ -201,7 +201,7 @@ manila_data_tag: "{{ manila_version }}"
 mariadb_version: "10.0"
 
 mariadb_image: "osism/mariadb"
-mariadb_tag: "{{ mariadb_version }}"
+mariadb_tag: "{{ mariadb_version }}-{{ osism_version }}"
 
 ##########################
 # project: memcached
@@ -209,7 +209,7 @@ mariadb_tag: "{{ mariadb_version }}"
 memcached_version: "4.0"
 
 memcached_image: "osism/memcached"
-memcached_tag: "{{ memcached_version }}"
+memcached_tag: "{{ memcached_version }}-{{ osism_version }}"
 
 ##########################
 # project: neutron
@@ -217,31 +217,31 @@ memcached_tag: "{{ memcached_version }}"
 neutron_version: "10.0"
 
 neutron_dhcp_agent_image: "osism/neutron-dhcp-agent"
-neutron_dhcp_agent_tag: "{{ neutron_version }}"
+neutron_dhcp_agent_tag: "{{ neutron_version }}-{{ osism_version }}"
 
 neutron_l3_agent_image: "osism/neutron-l3-agent"
-neutron_l3_agent_tag: "{{ neutron_version }}"
+neutron_l3_agent_tag: "{{ neutron_version }}-{{ osism_version }}"
 
 neutron_lbaas_agent_image: "osism/neutron-lbaas-agent"
-neutron_lbaas_agent_tag: "{{ neutron_version }}"
+neutron_lbaas_agent_tag: "{{ neutron_version }}-{{ osism_version }}"
 
 neutron_linuxbridge_agent_image: "osism/neutron-linuxbridge-agent"
-neutron_linuxbridge_agent_tag: "{{ neutron_version }}"
+neutron_linuxbridge_agent_tag: "{{ neutron_version }}-{{ osism_version }}"
 
 neutron_metadata_agent_image: "osism/neutron-metadata-agent"
-neutron_metadata_agent_tag: "{{ neutron_version }}"
+neutron_metadata_agent_tag: "{{ neutron_version }}-{{ osism_version }}"
 
 neutron_openvswitch_agent_image: "osism/neutron-openvswitch-agent"
-neutron_openvswitch_agent_tag: "{{ neutron_version }}"
+neutron_openvswitch_agent_tag: "{{ neutron_version }}-{{ osism_version }}"
 
 neutron_sfc_agent_image: "osism/neutron-sfc-agent"
-neutron_sfc_agent_tag: "{{ neutron_version }}"
+neutron_sfc_agent_tag: "{{ neutron_version }}-{{ osism_version }}"
 
 neutron_server_image: "osism/neutron-server"
-neutron_server_tag: "{{ neutron_version }}"
+neutron_server_tag: "{{ neutron_version }}-{{ osism_version }}"
 
 neutron_vpnaas_agent_image: "osism/neutron-vpnaas-agent"
-neutron_vpnaas_agent_tag: "{{ neutron_version }}"
+neutron_vpnaas_agent_tag: "{{ neutron_version }}-{{ osism_version }}"
 
 ##########################
 # project: nova
@@ -249,40 +249,40 @@ neutron_vpnaas_agent_tag: "{{ neutron_version }}"
 nova_version: "15.0"
 
 nova_libvirt_image: "osism/nova-libvirt"
-nova_libvirt_tag: "{{ nova_version }}"
+nova_libvirt_tag: "{{ nova_version }}-{{ osism_version }}"
 
 nova_ssh_image: "osism/nova-ssh"
-nova_ssh_tag: "{{ nova_version }}"
+nova_ssh_tag: "{{ nova_version }}-{{ osism_version }}"
 
 nova_conductor_image: "osism/nova-conductor"
-nova_conductor_tag: "{{ nova_version }}"
+nova_conductor_tag: "{{ nova_version }}-{{ osism_version }}"
 
 nova_consoleauth_image: "osism/nova-consoleauth"
-nova_consoleauth_tag: "{{ nova_version }}"
+nova_consoleauth_tag: "{{ nova_version }}-{{ osism_version }}"
 
 nova_novncproxy_image: "osism/nova-novncproxy"
-nova_novncproxy_tag: "{{ nova_version }}"
+nova_novncproxy_tag: "{{ nova_version }}-{{ osism_version }}"
 
 nova_spicehtml5proxy_image: "osism/nova-spicehtml5proxy"
-nova_spicehtml5proxy_tag: "{{ nova_version }}"
+nova_spicehtml5proxy_tag: "{{ nova_version }}-{{ osism_version }}"
 
 nova_scheduler_image: "osism/nova-scheduler"
-nova_scheduler_tag: "{{ nova_version }}"
+nova_scheduler_tag: "{{ nova_version }}-{{ osism_version }}"
 
 nova_compute_image: "osism/nova-compute"
-nova_compute_tag: "{{ nova_version }}"
+nova_compute_tag: "{{ nova_version }}-{{ osism_version }}"
 
 nova_api_image: "osism/nova-api"
-nova_api_tag: "{{ nova_version }}"
+nova_api_tag: "{{ nova_version }}-{{ osism_version }}"
 
 nova_compute_ironic_image: "osism/nova-compute-ironic"
-nova_compute_ironic_tag: "{{ nova_version }}"
+nova_compute_ironic_tag: "{{ nova_version }}-{{ osism_version }}"
 
 nova_serialproxy_image: "osism/nova-serialproxy"
-nova_serialproxy_tag: "{{ nova_version }}"
+nova_serialproxy_tag: "{{ nova_version }}-{{ osism_version }}"
 
 placement_api_image: "osism/nova-placement-api"
-placement_api_tag: "{{ nova_version }}"
+placement_api_tag: "{{ nova_version }}-{{ osism_version }}"
 
 ##########################
 # project: openvswitch_db
@@ -290,7 +290,7 @@ placement_api_tag: "{{ nova_version }}"
 openvswitch_db_version: "4.0"
 
 openvswitch_db_image: "osism/openvswitch-db-server"
-openvswitch_db_tag: "{{ openvswitch_db_version }}"
+openvswitch_db_tag: "{{ openvswitch_db_version }}-{{ osism_version }}"
 
 ##########################
 # project: openvswitch_vswitchd
@@ -298,7 +298,7 @@ openvswitch_db_tag: "{{ openvswitch_db_version }}"
 openvswitch_vswitchd_version: "4.0"
 
 openvswitch_vswitchd_image: "osism/openvswitch-vswitchd"
-openvswitch_vswitchd_tag: "{{ openvswitch_vswitchd_version }}"
+openvswitch_vswitchd_tag: "{{ openvswitch_vswitchd_version }}-{{ osism_version }}"
 
 ##########################
 # project: rabbitmq
@@ -306,7 +306,7 @@ openvswitch_vswitchd_tag: "{{ openvswitch_vswitchd_version }}"
 rabbitmq_version: "3.6"
 
 rabbitmq_image: "osism/rabbitmq"
-rabbitmq_tag: "{{ rabbitmq_version }}"
+rabbitmq_tag: "{{ rabbitmq_version }}-{{ osism_version }}"
 
 ##########################
 # project: rally
@@ -314,7 +314,7 @@ rabbitmq_tag: "{{ rabbitmq_version }}"
 rally_version: "0.9"
 
 rally_image: "osism/rally"
-rally_tag: "{{ rally_version }}"
+rally_tag: "{{ rally_version }}-{{ osism_version }}"
 
 ##########################
 # project: telegraf
@@ -322,7 +322,7 @@ rally_tag: "{{ rally_version }}"
 telegraf_version: "4.0"
 
 telegraf_image: "osism/telegraf"
-telegraf_tag: "{{ telegraf_version }}"
+telegraf_tag: "{{ telegraf_version }}-{{ osism_version }}"
 
 ##########################
 # project: tempest
@@ -330,5 +330,5 @@ telegraf_tag: "{{ telegraf_version }}"
 tempest_version: "16.1"
 
 tempest_image: "osism/tempest"
-tempest_tag: "{{ tempest_version }}"
+tempest_tag: "{{ tempest_version }}-{{ osism_version }}"
 
