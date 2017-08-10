@@ -46,7 +46,8 @@ for project in all_projects:
 
 with open(os.path.join(DESTINATION, "kolla-%s.yml" % OSISM_VERSION), "w") as fp:
     fp.write("---\n")
-    fp.write("osism_version: %s\n\n" % OSISM_VERSION)
+    fp.write("osism_version: %s\n" % OSISM_VERSION)
+    fp.write("docker_registry: index.docker.io\n\n")
 
 for lstfile in glob.iglob("tmp/tmp-*.lst"):
     with open(lstfile) as fp:

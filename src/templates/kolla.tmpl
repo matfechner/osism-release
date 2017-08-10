@@ -4,13 +4,13 @@
 {{ project_name }}_version: "{{ project_version }}"
 {% for image in project_images %}
 {%- if image == "placement_api" %}
-{{ image }}_image: "{{ docker_namespace }}/nova-{{ image|replace('_', '-') }}"
+{{ image }}_image: "{{ '{{' }} docker_registry {{ '}}' }}/{{ docker_namespace }}/nova-{{ image|replace('_', '-') }}"
 {{ image }}_tag: "{{ '{{' }} {{ project_name }}_version {{ '}}' }}-{{ '{{' }} osism_version {{ '}}' }}"
 {%- elif image == "openvswitch_db" %}
-{{ image }}_image: "{{ docker_namespace }}/{{ image|replace('_', '-') }}-server"
+{{ image }}_image: "{{ '{{' }} docker_registry {{ '}}' }}/{{ docker_namespace }}/{{ image|replace('_', '-') }}-server"
 {{ image }}_tag: "{{ '{{' }} {{ project_name }}_version {{ '}}' }}-{{ '{{' }} osism_version {{ '}}' }}"
 {%- else %}
-{{ image }}_image: "{{ docker_namespace }}/{{ image|replace('_', '-') }}"
+{{ image }}_image: "{{ '{{' }} docker_registry {{ '}}' }}/{{ docker_namespace }}/{{ image|replace('_', '-') }}"
 {{ image }}_tag: "{{ '{{' }} {{ project_name }}_version {{ '}}' }}-{{ '{{' }} osism_version {{ '}}' }}"
 {%- endif %}
 {% endfor %}

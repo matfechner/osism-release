@@ -6,8 +6,8 @@ build=$(date +%Y%m%d)
 ##########################
 # kolla
 
-src/kolla-prepare.sh
-src/kolla-generate.py
+BUILD=$build src/kolla-prepare.sh
+OSISM_VERSION=$build src/kolla-generate.py
 
 sed -e 's/-{{ osism_version }}//' images/kolla-$build.yml > images/kolla-current.yml
 sed -e 's/\(.*_tag:\).*/\1 latest/' -e '/.*_version:.*/d' images/kolla-$build.yml > images/kolla-latest.yml

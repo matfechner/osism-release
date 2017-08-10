@@ -1,307 +1,308 @@
 ---
+docker_registry: index.docker.io
 
 ##########################
 # project: aodh
 
 
-aodh_api_image: "osism/aodh-api"
+aodh_api_image: "{{ docker_registry }}/osism/aodh-api"
 aodh_api_tag: latest
 
-aodh_evaluator_image: "osism/aodh-evaluator"
+aodh_evaluator_image: "{{ docker_registry }}/osism/aodh-evaluator"
 aodh_evaluator_tag: latest
 
-aodh_listener_image: "osism/aodh-listener"
+aodh_listener_image: "{{ docker_registry }}/osism/aodh-listener"
 aodh_listener_tag: latest
 
-aodh_notifier_image: "osism/aodh-notifier"
+aodh_notifier_image: "{{ docker_registry }}/osism/aodh-notifier"
 aodh_notifier_tag: latest
 
 ##########################
 # project: ceilometer
 
 
-ceilometer_notification_image: "osism/ceilometer-notification"
+ceilometer_notification_image: "{{ docker_registry }}/osism/ceilometer-notification"
 ceilometer_notification_tag: latest
 
-ceilometer_api_image: "osism/ceilometer-api"
+ceilometer_api_image: "{{ docker_registry }}/osism/ceilometer-api"
 ceilometer_api_tag: latest
 
-ceilometer_central_image: "osism/ceilometer-central"
+ceilometer_central_image: "{{ docker_registry }}/osism/ceilometer-central"
 ceilometer_central_tag: latest
 
-ceilometer_collector_image: "osism/ceilometer-collector"
+ceilometer_collector_image: "{{ docker_registry }}/osism/ceilometer-collector"
 ceilometer_collector_tag: latest
 
-ceilometer_compute_image: "osism/ceilometer-compute"
+ceilometer_compute_image: "{{ docker_registry }}/osism/ceilometer-compute"
 ceilometer_compute_tag: latest
 
 ##########################
 # project: chrony
 
 
-chrony_image: "osism/chrony"
+chrony_image: "{{ docker_registry }}/osism/chrony"
 chrony_tag: latest
 
 ##########################
 # project: cinder
 
 
-cinder_volume_image: "osism/cinder-volume"
+cinder_volume_image: "{{ docker_registry }}/osism/cinder-volume"
 cinder_volume_tag: latest
 
-cinder_scheduler_image: "osism/cinder-scheduler"
+cinder_scheduler_image: "{{ docker_registry }}/osism/cinder-scheduler"
 cinder_scheduler_tag: latest
 
-cinder_backup_image: "osism/cinder-backup"
+cinder_backup_image: "{{ docker_registry }}/osism/cinder-backup"
 cinder_backup_tag: latest
 
-cinder_api_image: "osism/cinder-api"
+cinder_api_image: "{{ docker_registry }}/osism/cinder-api"
 cinder_api_tag: latest
 
 ##########################
 # project: common
 
 
-kolla_toolbox_image: "osism/kolla-toolbox"
+kolla_toolbox_image: "{{ docker_registry }}/osism/kolla-toolbox"
 kolla_toolbox_tag: latest
 
-cron_image: "osism/cron"
+cron_image: "{{ docker_registry }}/osism/cron"
 cron_tag: latest
 
-kubetoolbox_image: "osism/kubetoolbox"
+kubetoolbox_image: "{{ docker_registry }}/osism/kubetoolbox"
 kubetoolbox_tag: latest
 
 ##########################
 # project: elasticsearch
 
 
-elasticsearch_image: "osism/elasticsearch"
+elasticsearch_image: "{{ docker_registry }}/osism/elasticsearch"
 elasticsearch_tag: latest
 
 ##########################
 # project: fluentd
 
 
-fluentd_image: "osism/fluentd"
+fluentd_image: "{{ docker_registry }}/osism/fluentd"
 fluentd_tag: latest
 
 ##########################
 # project: glance
 
 
-glance_registry_image: "osism/glance-registry"
+glance_registry_image: "{{ docker_registry }}/osism/glance-registry"
 glance_registry_tag: latest
 
-glance_api_image: "osism/glance-api"
+glance_api_image: "{{ docker_registry }}/osism/glance-api"
 glance_api_tag: latest
 
 ##########################
 # project: gnocchi
 
 
-gnocchi_api_image: "osism/gnocchi-api"
+gnocchi_api_image: "{{ docker_registry }}/osism/gnocchi-api"
 gnocchi_api_tag: latest
 
-gnocchi_statsd_image: "osism/gnocchi-statsd"
+gnocchi_statsd_image: "{{ docker_registry }}/osism/gnocchi-statsd"
 gnocchi_statsd_tag: latest
 
-gnocchi_metricd_image: "osism/gnocchi-metricd"
+gnocchi_metricd_image: "{{ docker_registry }}/osism/gnocchi-metricd"
 gnocchi_metricd_tag: latest
 
 ##########################
 # project: haproxy
 
 
-haproxy_image: "osism/haproxy"
+haproxy_image: "{{ docker_registry }}/osism/haproxy"
 haproxy_tag: latest
 
 ##########################
 # project: heat
 
 
-heat_api_image: "osism/heat-api"
+heat_api_image: "{{ docker_registry }}/osism/heat-api"
 heat_api_tag: latest
 
-heat_api_cfn_image: "osism/heat-api-cfn"
+heat_api_cfn_image: "{{ docker_registry }}/osism/heat-api-cfn"
 heat_api_cfn_tag: latest
 
-heat_engine_image: "osism/heat-engine"
+heat_engine_image: "{{ docker_registry }}/osism/heat-engine"
 heat_engine_tag: latest
 
 ##########################
 # project: horizon
 
 
-horizon_image: "osism/horizon"
+horizon_image: "{{ docker_registry }}/osism/horizon"
 horizon_tag: latest
 
 ##########################
 # project: keepalived
 
 
-keepalived_image: "osism/keepalived"
+keepalived_image: "{{ docker_registry }}/osism/keepalived"
 keepalived_tag: latest
 
 ##########################
 # project: keystone
 
 
-keystone_image: "osism/keystone"
+keystone_image: "{{ docker_registry }}/osism/keystone"
 keystone_tag: latest
 
-keystone_fernet_image: "osism/keystone-fernet"
+keystone_fernet_image: "{{ docker_registry }}/osism/keystone-fernet"
 keystone_fernet_tag: latest
 
-keystone_ssh_image: "osism/keystone-ssh"
+keystone_ssh_image: "{{ docker_registry }}/osism/keystone-ssh"
 keystone_ssh_tag: latest
 
 ##########################
 # project: kibana
 
 
-kibana_image: "osism/kibana"
+kibana_image: "{{ docker_registry }}/osism/kibana"
 kibana_tag: latest
 
 ##########################
 # project: manila
 
 
-manila_share_image: "osism/manila-share"
+manila_share_image: "{{ docker_registry }}/osism/manila-share"
 manila_share_tag: latest
 
-manila_scheduler_image: "osism/manila-scheduler"
+manila_scheduler_image: "{{ docker_registry }}/osism/manila-scheduler"
 manila_scheduler_tag: latest
 
-manila_api_image: "osism/manila-api"
+manila_api_image: "{{ docker_registry }}/osism/manila-api"
 manila_api_tag: latest
 
-manila_data_image: "osism/manila-data"
+manila_data_image: "{{ docker_registry }}/osism/manila-data"
 manila_data_tag: latest
 
 ##########################
 # project: mariadb
 
 
-mariadb_image: "osism/mariadb"
+mariadb_image: "{{ docker_registry }}/osism/mariadb"
 mariadb_tag: latest
 
 ##########################
 # project: memcached
 
 
-memcached_image: "osism/memcached"
+memcached_image: "{{ docker_registry }}/osism/memcached"
 memcached_tag: latest
 
 ##########################
 # project: neutron
 
 
-neutron_dhcp_agent_image: "osism/neutron-dhcp-agent"
+neutron_dhcp_agent_image: "{{ docker_registry }}/osism/neutron-dhcp-agent"
 neutron_dhcp_agent_tag: latest
 
-neutron_l3_agent_image: "osism/neutron-l3-agent"
+neutron_l3_agent_image: "{{ docker_registry }}/osism/neutron-l3-agent"
 neutron_l3_agent_tag: latest
 
-neutron_lbaas_agent_image: "osism/neutron-lbaas-agent"
+neutron_lbaas_agent_image: "{{ docker_registry }}/osism/neutron-lbaas-agent"
 neutron_lbaas_agent_tag: latest
 
-neutron_linuxbridge_agent_image: "osism/neutron-linuxbridge-agent"
+neutron_linuxbridge_agent_image: "{{ docker_registry }}/osism/neutron-linuxbridge-agent"
 neutron_linuxbridge_agent_tag: latest
 
-neutron_metadata_agent_image: "osism/neutron-metadata-agent"
+neutron_metadata_agent_image: "{{ docker_registry }}/osism/neutron-metadata-agent"
 neutron_metadata_agent_tag: latest
 
-neutron_openvswitch_agent_image: "osism/neutron-openvswitch-agent"
+neutron_openvswitch_agent_image: "{{ docker_registry }}/osism/neutron-openvswitch-agent"
 neutron_openvswitch_agent_tag: latest
 
-neutron_sfc_agent_image: "osism/neutron-sfc-agent"
+neutron_sfc_agent_image: "{{ docker_registry }}/osism/neutron-sfc-agent"
 neutron_sfc_agent_tag: latest
 
-neutron_server_image: "osism/neutron-server"
+neutron_server_image: "{{ docker_registry }}/osism/neutron-server"
 neutron_server_tag: latest
 
-neutron_vpnaas_agent_image: "osism/neutron-vpnaas-agent"
+neutron_vpnaas_agent_image: "{{ docker_registry }}/osism/neutron-vpnaas-agent"
 neutron_vpnaas_agent_tag: latest
 
 ##########################
 # project: nova
 
 
-nova_libvirt_image: "osism/nova-libvirt"
+nova_libvirt_image: "{{ docker_registry }}/osism/nova-libvirt"
 nova_libvirt_tag: latest
 
-nova_ssh_image: "osism/nova-ssh"
+nova_ssh_image: "{{ docker_registry }}/osism/nova-ssh"
 nova_ssh_tag: latest
 
-nova_conductor_image: "osism/nova-conductor"
+nova_conductor_image: "{{ docker_registry }}/osism/nova-conductor"
 nova_conductor_tag: latest
 
-nova_consoleauth_image: "osism/nova-consoleauth"
+nova_consoleauth_image: "{{ docker_registry }}/osism/nova-consoleauth"
 nova_consoleauth_tag: latest
 
-nova_novncproxy_image: "osism/nova-novncproxy"
+nova_novncproxy_image: "{{ docker_registry }}/osism/nova-novncproxy"
 nova_novncproxy_tag: latest
 
-nova_spicehtml5proxy_image: "osism/nova-spicehtml5proxy"
+nova_spicehtml5proxy_image: "{{ docker_registry }}/osism/nova-spicehtml5proxy"
 nova_spicehtml5proxy_tag: latest
 
-nova_scheduler_image: "osism/nova-scheduler"
+nova_scheduler_image: "{{ docker_registry }}/osism/nova-scheduler"
 nova_scheduler_tag: latest
 
-nova_compute_image: "osism/nova-compute"
+nova_compute_image: "{{ docker_registry }}/osism/nova-compute"
 nova_compute_tag: latest
 
-nova_api_image: "osism/nova-api"
+nova_api_image: "{{ docker_registry }}/osism/nova-api"
 nova_api_tag: latest
 
-nova_compute_ironic_image: "osism/nova-compute-ironic"
+nova_compute_ironic_image: "{{ docker_registry }}/osism/nova-compute-ironic"
 nova_compute_ironic_tag: latest
 
-nova_serialproxy_image: "osism/nova-serialproxy"
+nova_serialproxy_image: "{{ docker_registry }}/osism/nova-serialproxy"
 nova_serialproxy_tag: latest
 
-placement_api_image: "osism/nova-placement-api"
+placement_api_image: "{{ docker_registry }}/osism/nova-placement-api"
 placement_api_tag: latest
 
 ##########################
 # project: openvswitch_db
 
 
-openvswitch_db_image: "osism/openvswitch-db-server"
+openvswitch_db_image: "{{ docker_registry }}/osism/openvswitch-db-server"
 openvswitch_db_tag: latest
 
 ##########################
 # project: openvswitch_vswitchd
 
 
-openvswitch_vswitchd_image: "osism/openvswitch-vswitchd"
+openvswitch_vswitchd_image: "{{ docker_registry }}/osism/openvswitch-vswitchd"
 openvswitch_vswitchd_tag: latest
 
 ##########################
 # project: rabbitmq
 
 
-rabbitmq_image: "osism/rabbitmq"
+rabbitmq_image: "{{ docker_registry }}/osism/rabbitmq"
 rabbitmq_tag: latest
 
 ##########################
 # project: rally
 
 
-rally_image: "osism/rally"
+rally_image: "{{ docker_registry }}/osism/rally"
 rally_tag: latest
 
 ##########################
 # project: telegraf
 
 
-telegraf_image: "osism/telegraf"
+telegraf_image: "{{ docker_registry }}/osism/telegraf"
 telegraf_tag: latest
 
 ##########################
 # project: tempest
 
 
-tempest_image: "osism/tempest"
+tempest_image: "{{ docker_registry }}/osism/tempest"
 tempest_tag: latest
 
