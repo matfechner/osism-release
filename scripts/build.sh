@@ -21,7 +21,7 @@ rm -rf tmp
 ##########################
 # ceph
 
-src/ceph-generate.py
+OSISM_VERSION=$build src/ceph-generate.py
 
 git rm -f images/ceph-current.yml
 ln -s ceph-$build.yml images/ceph-current.yml

@@ -1,5 +1,5 @@
 ---
-osism_version: 20170810
+osism_version: 20170821
 docker_registry: index.docker.io
 
 ##########################
@@ -74,9 +74,6 @@ kolla_toolbox_tag: "{{ common_version }}"
 
 cron_image: "{{ docker_registry }}/osism/cron"
 cron_tag: "{{ common_version }}"
-
-kubetoolbox_image: "{{ docker_registry }}/osism/kubetoolbox"
-kubetoolbox_tag: "{{ common_version }}"
 
 ##########################
 # project: elasticsearch
