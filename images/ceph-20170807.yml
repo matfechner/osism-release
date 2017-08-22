@@ -1,9 +1,0 @@
----
-##########################
-# project: ceph
-
-ceph_version: "kraken"
-ceph_revision: 0
-
-ceph_docker_image: osism/ceph-daemon
-ceph_docker_image_tag: "{{ ceph_version }}-{{ ceph_revision }}"
