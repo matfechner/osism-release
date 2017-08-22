@@ -1,11 +1,10 @@
 ---
-docker_registry: index.docker.io
+osism_version: 20170821
 
 ##########################
 # project: ceph
 
 ceph_version: "kraken"
-ceph_revision: 20170821
 
-ceph_docker_image: ""{{ docker_registry }}/osism/ceph-daemon"
-ceph_docker_image_tag: "{{ ceph_version }}-{{ ceph_revision }}"
+ceph_docker_image: osism/ceph-daemon
+ceph_docker_image_tag: "{{ ceph_version }}-{{ osism_version }}"

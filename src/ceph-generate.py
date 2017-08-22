@@ -29,7 +29,7 @@ template_project = environment.get_template(TEMPLATE_PROJECT)
 
 result = template_project.render({
     "version": versions["ceph_version"],
-    "revision": OSISM_VERSION
+    "osism_version": OSISM_VERSION
 })
 
 with open(os.path.join(DESTINATION, "ceph-%s.yml" % OSISM_VERSION), "w+") as fp:

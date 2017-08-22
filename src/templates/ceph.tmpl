@@ -1,12 +1,11 @@
 ---
-docker_registry: index.docker.io
+osism_version: {{ osism_version }}
 
 ##########################
 # project: ceph
 
 ceph_version: "{{ version }}"
-ceph_revision: {{ revision }}
 
-ceph_docker_image: ""{{ '{{' }} docker_registry {{ '}}' }}/osism/ceph-daemon"
-ceph_docker_image_tag: "{{ '{{' }} ceph_version {{ '}}' }}-{{ '{{' }} ceph_revision {{ '}}' }}"
+ceph_docker_image: osism/ceph-daemon
+ceph_docker_image_tag: "{{ '{{' }} ceph_version {{ '}}' }}-{{ '{{' }} osism_version {{ '}}' }}"
 
