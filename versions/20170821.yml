@@ -15,10 +15,10 @@ osism_projects:
   rundeck: 2.8.2
 
 infrastructure_projects:
-  elasticsearch: 5.5.1
+  elasticsearch: 5.5.2
   fluentd: 2.3.5
   haproxy: 1.7.8
-  kibana: 5.5.1
+  kibana: 5.5.2
   mariadb: 10.0.31
   rabbitmq: 3.6.10
 
@@ -48,4 +48,4 @@ neutron_plugins:
 integrated_projects:
   novnc: 0.6.2
   spice_html5: 0.1.6
-  logtrail: 0.1.18
+  logtrail: 0.1.19
