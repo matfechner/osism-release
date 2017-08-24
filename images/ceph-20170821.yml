@@ -8,3 +8,4 @@ ceph_version: "kraken"
 
 ceph_docker_image: osism/ceph-daemon
 ceph_docker_image_tag: "{{ ceph_version }}-{{ osism_version }}"
+ceph_docker_tag: "{{ ceph_version }}-{{ osism_version }}"
